@@ -2,6 +2,8 @@
   "name": "lithophane-maker",
   "private": true,
   "version": "0.1.0",
+  "description": "Local-first desktop lithophane maker for 3D printing",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",
