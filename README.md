@@ -90,6 +90,34 @@ Rust and Tauri host check:
 cargo check --manifest-path src-tauri/Cargo.toml
 ```
 
+## Windows release packaging
+
+Build the Windows desktop artifacts:
+
+```bash
+npm run bundle:win
+```
+
+Then prepare a GitHub-friendly release folder:
+
+```bash
+npm run release:win
+```
+
+That release step creates:
+
+- a standard Windows installer `.exe`
+- an `.msi` installer
+- a portable ZIP containing `Lithophane Studio.exe`
+- `SHA256SUMS.txt`
+- `GITHUB_RELEASE_NOTES.md`
+
+Output path:
+
+```text
+release/windows/x64/<version>/
+```
+
 ## GitHub and sharing
 
 If you want other people to use the project, the usual setup is:

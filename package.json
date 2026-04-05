@@ -9,7 +9,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "bundle:win": "npm run tauri build",
+    "release:win": "powershell -ExecutionPolicy Bypass -File ./scripts/prepare-release.ps1"
   },
   "dependencies": {
     "react": "^19.1.0",
